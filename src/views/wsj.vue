@@ -13,7 +13,11 @@
             ? "mdi-moon-waning-crescent"
             : "mdi-white-balance-sunny"
         }}</v-icon
-      >{{ getGreetingData }}, User!</v-card-title
+      >
+      {{ $route.name
+      }}<v-btn icon class="accent--text ml-2" @click="fetchData"
+        ><v-icon size="35">mdi-refresh</v-icon></v-btn
+      ></v-card-title
     ><newsFeed :articles="newsFeed" :loading="isApiExecuting" />
   </v-container>
 </template>
@@ -44,6 +48,7 @@ export default {
   },
   methods: {
     fetchData() {
+      this.isApiExecuting = true;
       fetchNewsData("everything?domains=wsj.com").then((response) => {
         this.isApiExecuting = false;
         this.newsFeed = response.data.articles;
