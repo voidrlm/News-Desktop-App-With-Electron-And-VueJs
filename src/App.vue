@@ -18,9 +18,9 @@ export default {
     //
   }),
   mounted() {
-    if (this.$route.path !== "/dashboard") {
+    if (this.$route.path !== "/topheadlines") {
       this.$router.push({
-        path: "/dashboard",
+        path: "/topheadlines",
       });
     }
   },
