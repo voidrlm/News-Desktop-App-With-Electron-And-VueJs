@@ -40,12 +40,17 @@ export default {
     },
   },
   created() {
-    fetchNewsData("top-headlines?country=us&category=business").then(
-      (response) => {
-        this.isApiExecuting = false;
-        this.newsFeed = response.data.articles;
-      }
-    );
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      fetchNewsData("top-headlines?country=us&category=business").then(
+        (response) => {
+          this.isApiExecuting = false;
+          this.newsFeed = response.data.articles;
+        }
+      );
+    },
   },
 };
 </script>

@@ -40,12 +40,15 @@ export default {
     },
   },
   created() {
-    fetchNewsData("everything?domains=wsj.com").then((response) => {
-      this.isApiExecuting = false;
-      this.$nextTick(() => {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      fetchNewsData("everything?domains=wsj.com").then((response) => {
+        this.isApiExecuting = false;
         this.newsFeed = response.data.articles;
       });
-    });
+    },
   },
 };
 </script>
