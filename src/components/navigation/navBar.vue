@@ -41,6 +41,11 @@ export default {
     showNavbarDrawer: true,
     items: [
       { title: "Top headlines", icon: "mdi-star", route: "/topheadlines" },
+      {
+        title: "Wall Street",
+        icon: "mdi-chart-areaspline",
+        route: "/wsj",
+      },
     ],
   }),
 };
