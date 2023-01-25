@@ -14,7 +14,7 @@
             : "mdi-white-balance-sunny"
         }}</v-icon
       >{{ getGreetingData }}, User!</v-card-title
-    >
+    >{{ getAPIKEY }}
   </v-container>
 </template>
 <script>
@@ -22,6 +22,9 @@ export default {
   name: "dashboard-component",
   data: () => ({}),
   computed: {
+    getAPIKEY() {
+      return process.env.VUE_APP_API_KEY;
+    },
     getGreetingData() {
       var today = new Date();
       var curHr = today.getHours();
