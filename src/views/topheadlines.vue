@@ -14,7 +14,7 @@
             : "mdi-white-balance-sunny"
         }}</v-icon
       >{{ getGreetingData }}, User!</v-card-title
-    ><newsFeed :articles="newsFeed.data.articles" />
+    ><newsFeed :articles="newsFeed" :loading="isApiExecuting" />
   </v-container>
 </template>
 <script>
@@ -24,7 +24,8 @@ export default {
   components: { newsFeed },
   name: "topheadlines-component",
   data: () => ({
-    newsFeed: {},
+    newsFeed: [],
+    isApiExecuting: true,
   }),
   computed: {
     getGreetingData() {
@@ -41,8 +42,8 @@ export default {
   created() {
     fetchNewsData("top-headlines?country=us&category=business").then(
       (response) => {
-        this.newsFeed = response;
-        console.log(response);
+        this.isApiExecuting = false;
+        this.newsFeed = response.data.articles;
       }
     );
   },
