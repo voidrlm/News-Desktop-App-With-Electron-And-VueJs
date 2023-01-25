@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-n10">
     <div v-if="loading">
       <v-card class="ma-5" v-for="n in 5" :key="n">
         <v-skeleton-loader class="mx-auto" type="article"></v-skeleton-loader>
