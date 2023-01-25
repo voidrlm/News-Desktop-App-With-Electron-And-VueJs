@@ -1,9 +1,8 @@
 import axios from "axios";
+const baseUrl = "https://newsapi.org/v2/";
+const apiKey = "&apiKey=" + process.env.VUE_APP_API_KEY;
 
-export function makeAPICall(query) {
-  const baseUrl = "https://newsapi.org/v2/";
-  const apiKey = "&apiKey=" + process.env.VUE_APP_API_KEY;
-  axios.get(baseUrl + query + apiKey).then(function (r1) {
-    console.log(r1);
-  });
-}
+export const fetchNewsData = async (query) => {
+  const response = await axios.get(baseUrl + query + apiKey);
+  return response;
+};
