@@ -39,7 +39,9 @@ export default {
 
   data: () => ({
     showNavbarDrawer: true,
-    items: [{ title: "Dashboard", icon: "mdi-home", route: "/dashboard" }],
+    items: [
+      { title: "Top headlines", icon: "mdi-star", route: "/topheadlines" },
+    ],
   }),
 };
 </script>

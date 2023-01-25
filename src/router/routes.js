@@ -1,8 +1,8 @@
 const routes = [
   {
-    path: "/dashboard",
-    name: "Dashboard",
-    component: () => import("../views/dashboard.vue"),
+    path: "/topheadlines",
+    name: "Top Headlines",
+    component: () => import("../views/topheadlines.vue"),
   },
 ];
 export default routes;
