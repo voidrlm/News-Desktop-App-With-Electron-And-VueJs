@@ -4,36 +4,42 @@ View Preview
 https://imgur.com/a/RHadgSl
 
 
-## Project setup
+A simple desktop application built using VueJS, Vuetify, and Electron for browsing and reading the latest news articles.
 
-npm i -g @vue/cli
+Features
 
-npm install
+Fetch latest news articles from a reliable API
 
-```
+Easy navigation to different categories of news
 
-### Compiles and hot-reloads for development
-```
+Clean and responsive user interface
 
-npm run serve or npm run electron:serve
+Requirements
 
-```
+NodeJS
 
-### Compiles and minifies for production
-```
+npm (Node Package Manager)
 
-npm run build or
-npm run electron:build
+Installation
 
-```
+Clone the repository
 
-### Lints and fixes files
-```
+Install the dependencies
 
-npm run lint
+$ npm install
 
-```
+Start the development server
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-```
+$ npm run serve
+
+Build the desktop application
+
+$ npm run electron:build
+
+Built With
+
+VueJS - JavaScript framework for building user interfaces
+
+Vuetify - Material Design component framework for VueJS
+
+Electron - Framework for building cross-platform desktop applications
