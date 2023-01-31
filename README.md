@@ -1,4 +1,4 @@
-View Preview
+## View Preview
 
 
 https://imgur.com/a/RHadgSl
@@ -6,7 +6,7 @@ https://imgur.com/a/RHadgSl
 
 A simple desktop application built using VueJS, Vuetify, and Electron for browsing and reading the latest news articles.
 
-Features
+## Features
 
 Fetch latest news articles from a reliable API
 
@@ -14,13 +14,13 @@ Easy navigation to different categories of news
 
 Clean and responsive user interface
 
-Requirements
+## Requirements
 
 NodeJS
 
 npm (Node Package Manager)
 
-Installation
+## Installation
 
 Clone the repository
 
@@ -36,7 +36,7 @@ Build the desktop application
 
 $ npm run electron:build
 
-Built With
+## Built With
 
 VueJS - JavaScript framework for building user interfaces
 
