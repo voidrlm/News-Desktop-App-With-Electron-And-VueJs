@@ -46,6 +46,11 @@ export default {
         icon: "mdi-chart-areaspline",
         route: "/wsj",
       },
+      {
+        title: "Soccer",
+        icon: "mdi-soccer",
+        route: "/soccer",
+      },
     ],
   }),
 };
