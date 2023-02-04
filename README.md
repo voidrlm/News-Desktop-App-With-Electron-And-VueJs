@@ -1,7 +1,7 @@
 ## A simple desktop application built using VueJS, Vuetify, and Electron for browsing and reading the latest news articles.
 
 ## Live Demo
-Use a dummy e-mail and password to signup and continue
+
 
 <p>
     <a href="https://voidrlm.github.io/News-Desktop-App-With-Electron-And-VueJs/#/topheadlines" target="_blank">Online Demo</a>
